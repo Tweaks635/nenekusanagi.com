@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .fullscreen-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .disclaimer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 35px 12px 15px;
+            border-radius: 4px;
+            font-size: 13px;
+            max-width: 320px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(3px);
+            transition: opacity 0.3s ease;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        .close-btn:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="nene.jpg" alt="Fullscreen Image" class="fullscreen-bg">
+
+    <div class="disclaimer" id="disclaimerBox">
+        <button class="close-btn" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
+        Disclaimer: This fan-made project is not affiliated with, authorized, maintained, sponsored, or endorsed by SEGA Corporation. All trademarks belong to their respective owners.
+    </div>
+
+</body>
+</html>
