@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Screen Image</title>
+    
+    <!-- SEO & Browser Tab Title -->
+    <title>Nene Kusanagi | Songstress of the Stage</title>
+    
+    <!-- Meta Descriptions for Search Engines -->
+    <meta name="description" content="Welcome to the theater. A fun, fan-made Project Sekai placeholder site dedicated to Wonderlands x Showtime's resident songstress, Nene Kusanagi.">
+    <meta name="keywords" content="Nene Kusanagi, Kusanagi Nene, Wonderlands x Showtime, WxS, PJSK, Project Sekai, nenekusanagi.com">
+    <meta name="author" content="Tweaks635">
+
+    <!-- Open Graph / Discord & Social Embeds -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nenekusanagi.com/">
+    <meta property="og:title" content="Nene Kusanagi - Songstress of the Stage">
+    <meta property="og:description" content="This site is powered by AI and some questionable life choices. Check it out here.">
+    <meta property="og:image" content="https://nenekusanagi.com/nene.jpg">
+
+    <!-- Twitter Card Customization -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Nene Kusanagi - Songstress of the Stage">
+    <meta property="twitter:description" content="This site is powered by AI and some questionable life choices.">
+    <meta property="twitter:image" content="https://nenekusanagi.com/nene.jpg">
+
     <style>
         html, body {
             margin: 0;
@@ -28,13 +49,38 @@
             left: 20px;
             background-color: rgba(0, 0, 0, 0.5);
             color: rgba(255, 255, 255, 0.8);
-            padding: 12px 15px;
+            padding: 14px 16px;
             border-radius: 4px;
             font-size: 11px;
             max-width: 250px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(3px);
             z-index: 200;
+            display: block;
+            height: auto;
+        }
+
+        /* Fixed & enhanced layout for the discrete interlink nav */
+        .discrete-network {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .discrete-network a {
+            color: rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease, text-shadow 0.2s ease;
+        }
+
+        .discrete-network a:hover {
+            color: #34dd9a;
+            text-shadow: 0 0 8px rgba(52, 221, 154, 0.6);
         }
 
         .icon-container {
@@ -51,6 +97,12 @@
             padding: 5px;
             border-radius: 50%;
             line-height: 0;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        .icon-link:hover {
+            transform: scale(1.1);
         }
 
         .icon-link img {
@@ -94,23 +146,33 @@
 </head>
 <body>
 
-    <img src="nene.jpg" alt="Fullscreen Image" class="fullscreen-bg">
+    <img src="nene.jpg" alt="Nene Kusanagi Fullscreen Art" class="fullscreen-bg" fetchpriority="high">
 
     <div class="icon-container">
-        <a href="https://github.com/Tweaks635/https-nenekusanagi.com-" class="icon-link" target="_blank" title="GitHub">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        <a href="https://github.com/Tweaks635/https-nenekusanagi.com-" class="icon-link" target="_blank" rel="noopener" title="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" loading="lazy">
         </a>
-        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" title="Discord">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" rel="noopener" title="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo" loading="lazy">
         </a>
     </div>
 
     <div class="disclaimer-top-left">
         This site is powered by AI and my questionable life choices. I’m pretty sure the energy used to render this could power a small village, so consider this my personal contribution to the climate crisis.
+        
+        <!-- Discrete Crawler Interlinking Network -->
+        <nav class="discrete-network" aria-label="Network Links">
+            <a href="https://emuotori.com" target="_blank" rel="noopener" title="Emu Otori">EO</a>
+            <a href="https://hatsunemiku.co.uk" target="_blank" rel="noopener" title="Hatsune Miku">MM</a>
+            <a href="https://kasaneteto.co.uk" target="_blank" rel="noopener" title="Kasane Teto">KT</a>
+            <a href="https://nenekusanagi.com" target="_blank" rel="noopener" title="Nene Kusanagi">NK</a>
+            <a href="https://ruikamishiro.com" target="_blank" rel="noopener" title="Rui Kamishiro">RK</a>
+            <a href="https://tenmatsukasa.com" target="_blank" rel="noopener" title="Tsukasa Tenma">TT</a>
+        </nav>
     </div>
 
     <div class="disclaimer" id="disclaimerBox">
-        <button class="close-btn" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
+        <button class="close-btn" type="button" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
         Disclaimer: This fan-made project is not affiliated with, authorized, maintained, sponsored, or endorsed by SEGA Corporation. All trademarks belong to their respective owners.
     </div>
 
