@@ -1,5 +1,5 @@
 # https-nenekusanagi.com-
-https://nenekusanagi.com/
+https://nenekusanagi.com
 hi
 
 
